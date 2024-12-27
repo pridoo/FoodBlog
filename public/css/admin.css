@@ -1,0 +1,99 @@
+/* General Styles */
+body {
+    margin-top:50px;
+    background-color: #f8f9fa; /* Light background color */
+    font-family: 'Arial', sans-serif; /* Font family for better readability */
+}
+
+/* Main Heading Style */
+h1 {
+
+    margin-top:50px;
+    margin-bottom: 20px; /* Space below the heading */
+    text-align: center; /* Centered heading */
+    color: #343a40; /* Darker color for contrast */
+    font-weight: bold; /* Bold heading */
+    font-size: 2.5rem; /* Larger font size */
+}
+
+/* Table Responsive */
+.table-responsive {
+    margin-top: 20px; /* Space above the table */
+}
+
+/* Table Styling */
+.table {
+    border-radius: 10px; /* Rounded corners for the table */
+    overflow: hidden; /* Ensures rounded corners are visible */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Table Header and Cell Styling */
+.table th, .table td {
+    vertical-align: middle; /* Center content vertically */
+    padding: 15px; /* Padding for cells */
+    text-align: center; /* Center text in cells */
+}
+
+.table th {
+    background-color: #007bff; /* Blue background for header */
+    color: white; /* White text for header */
+}
+
+/* Table Row Hover Effect */
+.table tbody tr:hover {
+    background-color: #f1f1f1; /* Light gray background on hover */
+}
+
+/* Button Styles */
+.btn {
+    margin: 5px; /* Space around buttons */
+    padding: 10px 20px; /* Button padding */
+    border-radius: 5px; /* Rounded corners for buttons */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transition for hover effects */
+}
+
+.btn-primary {
+    background-color: #007bff; /* Bootstrap primary color */
+    border: none; /* Remove border */
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: translateY(-2px); /* Lift effect on hover */
+}
+
+.btn-danger {
+    background-color: #dc3545; /* Bootstrap danger color */
+    border: none; /* Remove border */
+}
+
+.btn-danger:hover {
+    background-color: #c82333; /* Darker red on hover */
+    transform: translateY(-2px); /* Lift effect on hover */
+}
+
+.btn-warning {
+    background-color: #ffc107; /* Bootstrap warning color */
+    border: none; /* Remove border */
+}
+
+.btn-warning:hover {
+    background-color: #e0a800; /* Darker yellow on hover */
+    transform: translateY(-2px); /* Lift effect on hover */
+}
+
+/* Media Query for Responsiveness */
+@media (max-width: 576px) {
+    .btn {
+        width: 100%; /* Full width for buttons on small screens */
+    }
+
+    h1 {
+        font-size: 2rem; /* Adjust font size for smaller screens */
+    }
+
+    .table {
+        font-size: 0.9rem; /* Slightly smaller font size for table */
+    }
+}

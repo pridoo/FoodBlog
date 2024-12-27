@@ -1,0 +1,97 @@
+/* Footer Styling */
+footer {
+    background-color: #000; /* Black background color */
+    color: #fff;
+    padding: 20px 0;
+    width: 100%; /* Ensure it spans the full width */
+    position: relative; /* Ensure it flows within the document */
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around; /* Space between sections */
+    flex-wrap: wrap; /* Allow sections to wrap on smaller screens */
+    max-width: 2200px; /* Optional: Adjust the maximum width */
+    margin: auto; /* Center the container */
+    padding: 0 20px; /* Add some side padding */
+}
+
+.footer-section h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.footer-section {
+    flex: 1;
+    padding: 10px;
+    min-width: 200px; /* Set a minimum width for responsive behavior */
+    text-align: left; /* Align text to the left */
+}
+
+.footer-section h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.footer-section p {
+    font-size: 14px;
+    line-height: 1.6;
+    text-align: left;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    text-align: center;
+    padding: 10px 0;
+    border-top: 1px solid #444;
+    font-size: 14px;
+    margin-top: 20px; /* Add margin to separate from the main footer */
+}
+
+/* Scroll-up Button Styling */
+.scroll-up-btn {
+    display: none; /* Hidden by default */
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    z-index: 99; /* Stay on top */
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+    border: none;
+    padding: 10px 15px;
+    font-size: 18px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.scroll-up-btn:hover {
+    background-color: #444; /* Darker on hover */
+}
+
+/* Show button with smooth transition when user scrolls */
+.scroll-up-btn.show {
+    display: block;
+    opacity: 0.8;
+    transform: scale(1.1); /* Make it slightly bigger when shown */
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 768px) {
+    .footer-container {
+        flex-direction: column; /* Stack sections on smaller screens */
+        align-items: center; /* Center align items */
+    }
+
+    .footer-section {
+        margin-bottom: 20px; /* Add space between sections */
+        text-align: center; /* Center text on smaller screens */
+    }
+
+    .scroll-up-btn {
+        bottom: 20px;
+        right: 20px;
+    }
+}

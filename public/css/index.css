@@ -1,0 +1,73 @@
+/* Search Container Styling */
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+    padding-top: 50px;
+    background-color: #f5f5dc; /* Beige background */
+    padding: 20px; /* Optional: Adds padding to the container */
+    border-radius: 10px; /* Optional: Adds rounded corners */
+}
+
+.input-group {
+    position: relative;
+    width: 100%; /* Fixing the width issue */
+    max-width: 500px;
+}
+
+#searchInput {
+    width: 100%; /* Full width for the input */
+    padding: 10px 45px 10px 15px; /* Add space on the right for the button */
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: none; /* Remove any input shadow */
+}
+
+#searchButton {
+    position: absolute;
+    right: 10px; /* Position it inside the search box */
+    top: 50%;
+    transform: translateY(-50%);
+    border: none; /* Remove the default border */
+    background: none; /* Make background transparent */
+    color: #007bff; /* Button text color */
+    font-size: 20px; /* Font size */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    outline: none; /* Remove the outline on focus */
+    display: block; /* Ensure the button is visible */
+}
+
+#searchButton:focus {
+    outline: none; /* Ensure no outline on focus */
+}
+
+#searchButton:hover {
+    color: #0056b3; /* Darker shade on hover */
+}
+
+#noResults {
+    font-size: 20px;
+    display: none;
+    color: gray;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .input-group {
+        width: 100%; /* Adjust width for smaller screens */
+        max-width: 100%;
+    }
+
+    #searchInput {
+        padding: 10px 35px 10px 15px; /* Slightly reduce padding for mobile view */
+    }
+
+    #noResults {
+        font-size: 18px;
+    }
+}
